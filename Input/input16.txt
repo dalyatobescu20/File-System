@@ -1,0 +1,30 @@
+touch James_file
+touch Jacob_file
+touch Helen_file
+mkdir Mary_dir
+rm Mary_dir
+touch Helen_file
+ls
+touch Joseph_file
+touch Carrie_file
+mkdir Joseph_dir
+touch Lonna_file
+touch Marie_file
+touch Robin_file
+touch Scott_file
+ls
+mkdir Heather_dir
+touch Patricia_file
+mkdir Marco_dir
+touch Joan_file
+mkdir James_dir
+touch Alfred_file
+touch Walter_file
+ls
+rmdir Heather_dir
+rmdir Walter_file
+rmdir Marco_dir
+rm Alfred_file
+rm Joseph_dir
+ls
+quit

@@ -1,0 +1,31 @@
+pwd
+mkdir Peggy_dir
+touch Nancy_file
+mkdir Joe_dir
+mkdir William_dir
+ls
+cd Peggy_dir
+mkdir Debra_dir
+cd Debra_dir
+pwd
+rm Nancy_file
+cd ..
+cd ..
+cd Joe_dir
+mkdir Joe_dir
+touch Brain_file
+cd Joe_dir
+pwd
+cd ..
+cd ..
+ls
+rmdir Debra_dir
+rmdir Joe_dir
+rmdir William_dir
+rm Nancy_file
+ls
+mkdir Peggy_dir
+cd Peggy_dir
+pwd
+cd Debra_dir
+quit

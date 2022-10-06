@@ -1,0 +1,28 @@
+mkdir Amy_dir
+mkdir Fred_dir
+mkdir Helen_dir
+cd Amy_dir
+touch Sharon_file
+mkdir Joseph_dir
+cd ..
+cd Fred_dir
+mkdir Clayton_dir
+touch Evelyn_file
+touch Belinda_file
+cd ..
+cd Helen_dir
+mkdir Veronica_dir
+touch Jacob_file
+touch Sandra_file
+cd ..
+ls
+find -f Joseph_dir
+find -d Joseph_dir
+find -f Evelyn_file
+cd Fred_dir
+cd Clayton_dir
+pwd
+cd ..
+rm Clayton_dir
+cd ..
+quit

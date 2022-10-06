@@ -1,0 +1,30 @@
+mkdir Courtney_dir
+touch Lori_file
+mkdir Sondra_dir
+touch Richard_file
+rm Richard_file
+ls
+mkdir Ann_dir
+mkdir Myles_dir
+touch Alma_file
+mkdir Mary_dir
+touch Janice_file
+rm Janice_file
+mkdir Karyn_dir
+touch Andrew_file
+ls
+rm Alice_file
+touch James_file
+mkdir Sandy_dir
+touch Sandra_file
+touch Alice_file
+touch Eric_file
+mkdir Courtney_dir
+mkdir Jacqueline_dir
+ls
+touch Heather_file
+rm Alice_file
+rmdir Mary_dir
+rm Ann_dir
+ls
+quit

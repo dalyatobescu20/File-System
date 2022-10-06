@@ -1,0 +1,5 @@
+mkdir dir4
+mkdir dir3
+mkdir dir2
+ls
+quit

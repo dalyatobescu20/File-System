@@ -1,0 +1,37 @@
+mkdir Ronald_dir
+mkdir Alfred_dir
+mkdir Heather_dir
+mkdir Mary_dir
+mkdir Willie_dir
+touch Donald_file
+mkdir Duane_dir
+mkdir Fred_dir
+touch Duane_file
+mkdir Agnes_dir
+mkdir Marco_dir
+touch Abel_file
+touch Jacob_file
+touch Dora_file
+mkdir Marie_dir
+mkdir Walter_dir
+mkdir Vicki_dir
+mkdir Richard_dir
+mkdir Florence_dir
+touch Marco_file
+mkdir Lillian_dir
+touch Richard_file
+touch Dora_file
+mkdir Michael_dir
+ls
+rm Dora_file
+rmdir Michael_dir
+rm Duane_file
+rmdir Richard_dir
+rmdir Heather_dir
+rm Richard_file
+rm Jacob_file
+rm Duane_file
+rmdir Vicki_dir
+rmdir Michael_dir
+ls
+quit

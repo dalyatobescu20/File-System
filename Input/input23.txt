@@ -1,0 +1,22 @@
+touch Amanda_file
+touch Robin_file
+mkdir Myles_dir
+touch Donald_file
+ls
+cd Myles_dir
+touch Sharon_file
+touch Jacqueline_file
+mkdir Evelyn_dir
+ls
+cd Evelyn_dir
+pwd
+mkdir Peggy_dir
+touch Peggy_file
+touch Elaine_file
+rmdir Peggy_dir
+cd ..
+rmdir Evelyn_dir
+pwd
+cd ..
+ls
+quit

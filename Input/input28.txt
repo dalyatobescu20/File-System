@@ -1,0 +1,36 @@
+touch Joseph_file
+touch Debra_file
+mkdir Agnes_dir
+touch Robin_file
+rm Robin_file
+cd Agnes_dir
+mkdir Terri_dir
+touch Eric_file
+touch Lori_file
+touch Doreen_file
+mkdir Lillian_dir
+touch Belinda_file
+find -d Agnes_dir
+cd ..
+rmdir Agnes_dir
+mkdir Willis_dir
+cd Lillian_dir
+mkdir Helen_dir
+touch Janice_file
+touch Willie_file
+touch Joe_file
+find -d Terri_dir
+touch Mary_file
+cd Helen_dir
+mkdir Joseph_dir
+touch Karyn_file
+find -f Debra_file
+touch Ronald_file
+touch Randy_file
+mkdir Clayton_dir
+cd Clayton_dir
+mkdir Courtney_dir
+touch Marco_file
+mkdir Alice_dir
+find -f Debra_file
+quit

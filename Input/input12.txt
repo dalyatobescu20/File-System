@@ -1,0 +1,16 @@
+touch file2
+touch file1
+touch file0
+rm file5
+touch file3
+ls
+rm file3
+touch file6
+touch file1
+mkdir dir3
+rm file6
+rm file4
+mkdir dir6
+touch file3
+ls
+quit

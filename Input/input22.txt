@@ -1,0 +1,35 @@
+mkdir Marco_dir
+touch Robin_file
+touch Belinda_file
+mkdir Erin_dir
+ls
+cd Marco_dir
+touch Robert_file
+touch James_file
+mkdir Barbara_dir
+touch Sandra_file
+rmdir Erin_dir
+cd Barbara_dir
+mkdir Stacie_dir
+mkdir James_dir
+mkdir Manuel_dir
+mkdir Dorothy_dir
+ls
+cd ..
+rmdir Barbara_dir
+ls
+mkdir Doreen_dir
+mkdir Andrew_dir
+mkdir Jacqueline_dir
+cd Andrew_dir
+mkdir Travis_dir
+mkdir Joseph_dir
+touch Joe_file
+touch Barbara_file
+ls
+cd ..
+ls
+cd ..
+rm Robin_file
+ls
+quit

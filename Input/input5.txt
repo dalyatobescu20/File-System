@@ -1,0 +1,18 @@
+ls
+mkdir dir10
+mkdir dir9
+mkdir dir8
+mkdir dir10
+ls
+touch dir9
+touch file8
+touch file7
+touch file6
+touch file5
+ls
+touch file8
+touch file0
+touch file1
+touch file?
+ls
+quit

@@ -1,0 +1,27 @@
+mkdir Debra_dir
+mkdir Charlie_dir
+touch Lillian_file
+cd Debra_dir
+touch Marvin_file
+touch Jacqueline_file
+touch Nancy_file
+touch Peggy_file
+mkdir Eric_dir
+cd Eric_dir
+mkdir Jacob_dir
+mkdir Clayton_dir
+mkdir Joseph_dir
+touch Rachel_file
+mkdir Abel_dir
+cd Jacob_dir
+touch Scott_file
+ls
+cd ..
+ls
+cd ..
+ls
+cd ..
+ls
+rmdir Debra_dir
+ls
+quit

@@ -1,0 +1,23 @@
+mkdir dir4
+touch file1
+mkdir dir8
+mkdir dir2
+touch file2
+ls
+rm file8
+touch file6
+ls
+touch file2
+touch file3
+mkdir dir6
+rm file3
+rm file0
+mkdir dir9
+mkdir dir2
+rm file2
+ls
+rm file3
+touch file4
+mkdir dir2
+ls
+quit

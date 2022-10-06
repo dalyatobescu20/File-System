@@ -1,0 +1,10 @@
+mkdir dir2
+touch file1
+ls
+touch file3
+mkdir dir4
+mkdir dir0
+touch dir2
+touch file2
+ls
+quit

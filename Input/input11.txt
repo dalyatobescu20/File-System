@@ -1,0 +1,21 @@
+touch file2
+touch file6
+touch file8
+ls
+rm file6
+touch file1
+touch file7
+ls
+touch file6
+rm file2
+rm file0
+ls
+touch file4
+rm file2
+rm file4
+touch file2
+touch file2
+touch file7
+touch file3
+ls
+quit

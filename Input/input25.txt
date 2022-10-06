@@ -1,0 +1,27 @@
+mkdir Stacie_dir
+cd Stacie_dir
+touch Sandra_file
+mkdir Joseph_dir
+cd Joseph_dir
+touch Courtney_file
+mkdir Willie_dir
+cd Willie_dir
+mkdir Peggy_dir
+touch Willie_file
+cd Peggy_dir
+mkdir William_dir
+touch Ann_file
+cd William_dir
+touch Richard_file
+mkdir Patricia_dir
+cd Patricia_dir
+pwd
+cd ..
+cd ..
+cd ..
+cd ..
+cd ..
+cd ..
+rmdir Stacie_dir
+ls
+quit

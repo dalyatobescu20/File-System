@@ -1,0 +1,92 @@
+mkdir Terri_dir
+mkdir Joseph_dir
+touch Mary_file
+mkdir Lee_dir
+mkdir Travis_dir
+touch Claire_file
+cd Joseph_dir
+touch Berta_file
+touch Heather_file
+mkdir Debra_dir
+mkdir Sondra_dir
+touch Ronald_file
+mkdir Joseph_dir
+cd Debra_dir
+touch Marco_file
+touch Amy_file
+mkdir Helen_dir
+touch Heather_file
+cd Helen_dir
+mkdir Myles_dir
+mkdir Darlene_dir
+touch Darlene_file
+touch Amy_file
+mkdir Ronald_dir
+mkdir Belinda_dir
+touch Elaine_file
+cd Belinda_dir
+touch Julian_file
+mkdir James_dir
+mkdir Marco_dir
+touch Brain_file
+touch Abel_file
+cd Marco_dir
+mkdir Karyn_dir
+mkdir Alfred_dir
+touch Ronald_file
+mkdir William_dir
+mkdir Terri_dir
+cd Terri_dir
+touch Janice_file
+mkdir Barbara_dir
+mkdir Brain_dir
+touch Patricia_file
+touch Marie_file
+cd ..
+ls
+mkdir Edward_dir
+cd Edward_dir
+touch Nancy_file
+touch Walter_file
+mkdir Peggy_dir
+touch Elaine_file
+mkdir Michael_dir
+cd Michael_dir
+mkdir Sandra_dir
+touch Ann_file
+mkdir Willis_dir
+touch Richard_file
+pwd
+rmdir Sandra_dir
+rm Ann_file
+find -f Julian_file
+find -d Belinda_dir
+cd ..
+ls
+cd ..
+ls
+cd ..
+cd ..
+ls
+cd ..
+cd ..
+touch Dolores_file
+touch Jacob_file
+mkdir Eric_dir
+touch Berta_file
+mkdir Belinda_dir
+mkdir Florence_dir
+mkdir Lee_dir
+cd Eric_dir
+mkdir Michael_dir
+mkdir Walter_dir
+mkdir Alma_dir
+mkdir Florence_dir
+touch Joseph_file
+pwd
+cd ..
+cd ..
+ls
+pwd
+find -f Jacob_file
+quit

@@ -1,0 +1,29 @@
+mkdir Berta_dir
+touch Karyn_file
+mkdir Berta_dir
+touch Brain_file
+touch Barbara_file
+touch Alice_file
+touch Courtney_file
+touch Andrew_file
+mkdir Lori_dir
+touch Ralph_file
+touch Samuel_file
+touch Claire_file
+mkdir Julian_dir
+mkdir Doreen_dir
+touch Florence_file
+touch Janice_file
+mkdir Clayton_dir
+mkdir Lonna_dir
+touch Theodore_file
+ls
+rmdir Theodore_file
+rmdir Lori_dir
+rmdir Berta_dir
+rmdir Berta_dir
+rm Doreen_dir
+rmdir Ralph_file
+rm Florence_file
+ls
+quit

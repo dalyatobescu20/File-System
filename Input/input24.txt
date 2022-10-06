@@ -1,0 +1,38 @@
+mkdir Sharon_dir
+mkdir Stacie_dir
+mkdir Marco_dir
+mkdir James_dir
+touch Carrie_file
+mkdir Marie_dir
+mkdir Edward_dir
+touch Eric_file
+ls
+rmdir Stacie_dir
+rmdir Marco_dir
+cd Sharon_dir
+touch Lori_file
+touch Doreen_file
+mkdir Sondra_dir
+mkdir Joseph_dir
+mkdir Robert_dir
+touch Sandra_file
+mkdir James_dir
+cd Robert_dir
+pwd
+cd ..
+cd ..
+ls
+cd Marco_dir
+touch Florence_file
+mkdir Peggy_dir
+mkdir Dorothy_dir
+mkdir Stacie_dir
+touch Carrie_file
+cd Dorothy_dir
+pwd
+rmdir Marco_dir
+cd ..
+rm Carrie_file
+rm Eric_file
+ls
+quit

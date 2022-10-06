@@ -1,0 +1,12 @@
+touch Manuel_file
+mkdir Joseph_dir
+mkdir Raymond_dir
+ls
+cd Raymond_dir
+touch Mary_file
+touch Donald_file
+mkdir Sharon_dir
+ls
+cd ..
+ls
+quit

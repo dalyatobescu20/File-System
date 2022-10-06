@@ -1,0 +1,28 @@
+touch Eric_file
+mkdir Erin_dir
+mkdir Dorothy_dir
+cd Dorothy_dir
+touch Randy_file
+touch Karyn_file
+mkdir Charlie_dir
+cd Charlie_dir
+mkdir Alice_dir
+touch Karyn_file
+mkdir Rachel_dir
+cd Rachel_dir
+mkdir Veronica_dir
+mkdir Joe_dir
+touch Rachel_file
+mkdir Erin_dir
+pwd
+cd ..
+cd Alice_dir
+touch Jacqueline_file
+mkdir Evelyn_dir
+cd ..
+cd ..
+cd ..
+cd ..
+find -f Rachel_file
+find -d Alice_dir
+quit

@@ -1,0 +1,19 @@
+mkdir Mary_dir
+mkdir Lonna_dir
+touch Samuel_file
+mkdir Joseph_dir
+touch Debra_file
+mkdir Heather_dir
+ls
+cd Julian_dir
+cd Heather_dir
+touch Scott_file
+touch Dora_file
+rm Scott_file
+mkdir Julian_dir
+cd Julian_dir
+cd ..
+ls
+rmdir Julian_dir
+ls
+quit
