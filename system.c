@@ -1,4 +1,4 @@
-//TOBESCU DALYA-ALEXANDRA GRUPA 311CB
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdarg.h>
