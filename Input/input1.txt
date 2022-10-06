@@ -1,0 +1,5 @@
+touch file1
+touch file0
+touch file3
+ls
+quit
