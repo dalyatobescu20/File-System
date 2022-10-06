@@ -1,8 +1,8 @@
 build: 
-	gcc -Wall -g -o tema3 tema3.c -std=gnu11
+	gcc -Wall -g -o system system.c -std=gnu11
 
 run:
-	./tema3
+	./system
 
 clean:
-	rm -rf tema3
+	rm -rf system
