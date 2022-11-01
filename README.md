@@ -1,42 +1,14 @@
-1.FUNCTIA DE TOUCH:
-->in cazul in care arb de fisiere era gol, m-am folosit de functia de
- create_file, care creeaza un fisier doar cu numele initializat
-->in cazul in care arborele nu era gol,parcurgem tot arborele 
-si adaugam in arbore, avand grija pe ce pozitie punem, in ordine 
-lexicografica. De asemenea, daca exista un director are acelasi
-nume returnam "DIRECTORY ALREADY EXISTS".
-->am folosit funcita de check2 care verifica daca un director
-anume exista in arbore, daca exista returneaza 1.
+1.TOUCH FUNCTION  in case that the tree is empty, I used create_file function which create a file only with initialized name(in case that the tree wasn’t empty, I go through the whole tree and add an element to the tree, taking into account the lexicographic order. In plus, if exists a directory with the same name as the new file we want to add, we return the message “DIRECTORY ALREADY EXISTS”(I used the check2 function which verify if a certain directory already exists in the tree and if it does, return 1);
 
-2.FUNCTIA DE MKDIR
-->am facut o functie care imi creeaza arborele root, doar cu numele
-initializat
-->am facut o functie care pastreaza si parintele directorului curent
-->asemanator ca la functia de touch, daca este gol, adaugam un director,
-daca nu este, parcurgem tot arborele de subdirectoare si inseram.
-Daca exista un fisier deja cu acelasi nume, afisam
-"FILE ALREADY EXISTS".
-->am folosit funcita de file_exists care verifica daca un fisier
-anume exista in arbore, daca exista returneaza 1.
+2.MKDIR FUNCTION I made a function which create a root tree just with the initialized name.Also, I made a function that keep directory’s parent  too.
+as with the touch function, if it’s empty ->add a new directory and if it’s not->I go through subdirectory tree and insert the new directory. If exists a file with the same name, I return the message “FILE ALREADY EXISTS!”(I used the file_exists function);
 
-3.FUNCTIA DE LS
-->am folosit implementarea din laborator pentru afisarea unui arbore
-in ordine SRD si am aplicat atat pentru subdirectoare cat si pentru fisiere
+3.LS FUNCTION  I used Inorder Traversal both for directories and subdirectories.
 
-4.FUNCTIA DE RM
-->functia delete_file cauta in arbore fisierul pe care vrem sa-l
-eliminam in mod recursiv. Functia returneaza noul arbore
+4.RM FUNCTION  delete_file function search a file which we want to delete recursively(Function return the new tree);
 
-5. FUNCTIA DE RMDIR
--> functia delete_dir cauta in arborele de subdirectoare si daca gaseste
-directorul dorit il elimina in mod recursiv. Functia returneaza noul arbore.
+5.RMDIR FUNCTON  delete_dir function search a directory which we want to delete recursiverly(function return the new tree);
 
-6.FUNCTIA DE CD
--> am folosit functia de find care cauta un director si il returneaza
--> daca am gasit directorul in arborele de subdirectoare, ne mutam pe acesta,
-astfel root devine acel director si este pastrat in root->parinte, iar atunci
-cand dam comanda cd .. se intoarce la cel initial.
+6.CD FUNCTION  I used find function which search a directory and returns it. If we found the directory, we move on it(root becomes that directory and its kept in root->parinte and when we use cd .. command, we return at initial directory.
 
-7.FUNCTIA DE PWD
-->nu este terminata, am stocat intr-un vector toti parintii si apoi i-am afisat,
-(cand dau comanda cd, atunci pun acel director in vector);
+
