@@ -9,22 +9,22 @@
 #define MAX_LEN 50
 
 typedef struct director {
-    char *nume; //nume director
-    struct director *parinte; //pointer catre directorul parinte
-    struct director *directories; //pointer catre radacina arborelui de subdirectoare
-    struct director *st; //pointer catre urm dir < ca el
-    struct director *dr; //pointer catre urm dir > ca el
-    struct fisier  *files; //pointer catre radacina arborelui de fisiere
+    char *nume; //directory name
+    struct director *parinte; //pointer to parent directory
+    struct director *directories; //pointer to the root of the subdirectory tree
+    struct director *st; //pointer to next dir < than it
+    struct director *dr; //pointer to next dir > than it
+    struct fisier  *files; //pointer to the root of the file tree
 }Directory;
 
 typedef struct fisier {
-    char* nume; //nume fisier
-    struct fisier* st; //pointer catre urm fisier < ca el
-    struct fisier* dr; //pointer catre urm fisier > ca el
-    Directory* parinte; //pointer catre directorul de care apartine
+    char* nume; //file name
+    struct fisier* st; //pointer to next file < than it
+    struct fisier* dr; //pointer to urm file > than it
+    Directory* parinte; //pointer to directory's parent
 }File;
 
-//functie de alocare de director de tip root
+//function which allocate a root directory 
 Directory* create_root(char* numedir) {
     Directory* dir = (Directory*)calloc(1, sizeof(Directory));
     assert(dir);
@@ -39,7 +39,7 @@ Directory* create_root(char* numedir) {
     return dir;
 }
 
-//functie de alocare a unui director care se aiba parinte
+//function that allocate a directory to have a parent
 Directory* create_directory(char* numedir, Directory* parinte) {
     Directory* dir = (Directory*)malloc(sizeof(Directory));
     assert(dir);
@@ -56,7 +56,7 @@ Directory* create_directory(char* numedir, Directory* parinte) {
     return dir;
 }
 
-//functie de alocare memorie pentru un fisier
+//function that allocate memory for a file
 File* create_file(char* nume_dir, Directory* parinte) {
     File* fisier = (File*)calloc(1, sizeof(File));
     assert(fisier);
@@ -71,7 +71,7 @@ File* create_file(char* nume_dir, Directory* parinte) {
     return fisier;
 }
 
-//functie care verifica daca exista un anumit fisier in arborele de fisiere
+//function that checks if a certain file exists
 bool file_exists(File* a, char* nume) {
     if(a == NULL)  
         return false;
@@ -85,7 +85,7 @@ bool file_exists(File* a, char* nume) {
     return res2;
 }
 
-//functie care verifica daca exista un anumit director in arborele de subdirectoare
+//function that checks if a certain directory exists.
 bool check2(Directory* a, char* nume) {
     if(a == NULL)
         return false;
@@ -99,7 +99,7 @@ bool check2(Directory* a, char* nume) {
     return res2;
 }
 
-//functie care daca gaseste un director il returneaza
+//function that find a directory and return it
 Directory* find(Directory* a, char* nume) {
     if(a == NULL)
         return NULL;
@@ -112,7 +112,7 @@ Directory* find(Directory* a, char* nume) {
         return res2;
 }
 
-//functie care creeaza fisier
+//function that creates a file
 int touch_file(File** fisier, char* nume_file, Directory* director) {
     File* new = NULL;
     File* aux = NULL;
@@ -133,8 +133,7 @@ int touch_file(File** fisier, char* nume_file, Directory* director) {
             return 0;
         }
         return 1;
-    }
-    //daca exista, ma plimb prin subarborele de fisiere si il inserez in ordine
+    }	
     new = *fisier;
     while (new) {
         p = new;
@@ -157,7 +156,7 @@ int touch_file(File** fisier, char* nume_file, Directory* director) {
     return 1;
 }
 
-//functie care afla minimul din arborele de fisiere
+//function which finds the min number in the tree
 File* minvalue(File* fis) {
     File* aux = fis;
     while(aux && aux->st != NULL) 
@@ -165,7 +164,6 @@ File* minvalue(File* fis) {
     return aux;
 }
 
-//functie care afla minimul din subarborele de directoare
 Directory* minvalue2(Directory* dir) {
     Directory* aux = dir;
     while(aux && aux->st != NULL) 
@@ -173,7 +171,7 @@ Directory* minvalue2(Directory* dir) {
     return aux;
 }
 
-//functie care sterge un anumit fisier din arbore
+//function that delete a file
 File* delete_file(File* fisier, char* nume_fisier, Directory* files) {
     if(fisier == NULL) 
         return fisier;
@@ -207,7 +205,7 @@ File* delete_file(File* fisier, char* nume_fisier, Directory* files) {
     return fisier;
 }
 
-//functie care sterge un anumit director din arbore
+//function that delete a directory
 Directory* delete_directory(Directory* director, char* nume_dir) {
 
     if(director == NULL) 
@@ -242,7 +240,7 @@ Directory* delete_directory(Directory* director, char* nume_dir) {
     return director;
 }
 
-//functie care afiseaza arborele de fisiere
+//function which display File Tree
 void SRD_file(File* a)
 {
 	if(!a) return;
@@ -251,7 +249,7 @@ void SRD_file(File* a)
 	SRD_file(a->dr);
 }
 
-//functie care afiseaza arborele de directoare
+//function which display Directory tree
 void SRD_dir(Directory* a)
 {
 	if(!a) return;
@@ -260,7 +258,7 @@ void SRD_dir(Directory* a)
 	SRD_dir(a->dr);
 }
 
-//functie care afiseaza parintii
+//function which display the parents.
 void SRD_parent(Directory* a) {
 
     if(!a) return;
@@ -273,17 +271,15 @@ void SRD_parent(Directory* a) {
    
 }
 
-//functie care creeaza un director
+//function that creates a directory
 int make_dir(Directory* dir, char* nume_dir, Directory* parinte) {
     Directory* aux = NULL;
     Directory* p = NULL;
     File* temp = dir->files;
-    //ma asigur ca nu exista un fisier cu acelasi nume
     if(file_exists(temp, nume_dir)) {
         printf("File %s already exists!\n", nume_dir);
         return 0;
     }
-    //daca este gol , pur si simplu adaug in arbore
     if(dir->directories == NULL) {
         dir->directories = create_directory(nume_dir, parinte );
         if(!(dir->directories)) {
@@ -292,7 +288,6 @@ int make_dir(Directory* dir, char* nume_dir, Directory* parinte) {
         }
             return 1;
     }
-    //altfel ma plimb prin arbore si inserez in ordine lexicografica
     Directory* new = dir->directories;
     while (new != 0) {
         p = new;
@@ -315,7 +310,7 @@ int make_dir(Directory* dir, char* nume_dir, Directory* parinte) {
     return 1;
 }
 
-//functie care distruge un fisier
+//function that destroy a file
 void distruge_file(File **r) 
 {   File *left = (*r)->st;
     (*r)->st = left->dr;
@@ -343,7 +338,7 @@ void TreeDestroy(File *tree)
     }
 }
 
-//functie de distrugere director
+//functon which destroy a directory
 void distruge_director(Directory **r)
 {   Directory *left = (*r)->st;
     (*r)->st = left->dr;
