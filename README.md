@@ -41,7 +41,3 @@ This project provides a comprehensive file system management toolset. Below is a
   - When a directory is found, the root becomes that directory, and its parent is stored in `root->parinte`. 
   - Using the `cd ..` command returns to the initial directory.
 
-## Markdown Code
-
-```markdown
-Paste your Markdown code here
